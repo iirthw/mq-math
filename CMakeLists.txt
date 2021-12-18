@@ -21,3 +21,12 @@ set (SOURCE_FILES ${HEADER_FILES} ${IMPL_FILES})
 add_library (mq_math STATIC ${SOURCE_FILES})
 
 # -----------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+# If unit tests are needed, uncomment the following:
+# set (ENABLE_TESTS ON)
+
+if (DEFINED ENABLE_TESTS)     
+     add_subdirectory (test)
+endif ()
