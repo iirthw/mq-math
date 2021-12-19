@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-#include "MqMath.h"
+#include "mq.h"
 
 namespace mq {
         mat4::mat4(float d)

@@ -22,6 +22,10 @@ add_library (mq_math STATIC ${SOURCE_FILES})
 
 # ------------------------------------------------------------------------------
 
+target_include_directories (
+    ${PROJECT_NAME} 
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/public
+    )
 
 # ------------------------------------------------------------------------------
 # If unit tests are needed, uncomment the following:

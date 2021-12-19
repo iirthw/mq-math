@@ -3,7 +3,7 @@
 #include <cmath>
 #include <iostream>
 
-#include "MqMath.h"
+#include "mq.h"
 
 namespace mq {
 
