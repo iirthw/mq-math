@@ -27,6 +27,13 @@ target_include_directories (
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/public
     )
 
+# To treat warning as error, uncomment the following:
+# if (MSVC)
+#   target_compile_options (mq_math PRIVATE /W4 /WX)
+# else ()
+#   target_compile_options (mq_math PRIVATE -Wall -Wextra -Wpedantic -Werror)
+# endif ()
+
 # ------------------------------------------------------------------------------
 # If unit tests are needed, uncomment the following:
 # set (ENABLE_TESTS ON)
