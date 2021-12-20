@@ -156,12 +156,12 @@ namespace mq {
 
     template <typename T>
     vec4_t<T> vec4_t<T>::operator- () const {
-        return -(*this);
+        return { -(*this)[0], -(*this)[1], -(*this)[2], -(*this)[4] };
     }
 
     template <typename T>
     vec4_t<T>& vec4_t<T>::operator-= (const vec4_t<T>& rhs) {
-        (*this) += -(*this);
+        (*this) += -rhs;
         return *this;
     }
 
