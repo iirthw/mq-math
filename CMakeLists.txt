@@ -1,7 +1,9 @@
 project (mq_math)
 
-set (HEADER_FILES 
-	public/mat.h
+cmake_minimum_required(VERSION 3.1)
+
+set (HEADER_FILES
+     public/mat.h
      public/mat4_row_major.h
      public/mq.h
      public/vec.h
@@ -28,11 +30,11 @@ target_include_directories (
     )
 
 # To treat warning as error, uncomment the following:
-# if (MSVC)
-#   target_compile_options (mq_math PRIVATE /W4 /WX)
-# else ()
+if (MSVC)
+   target_compile_options (mq_math PRIVATE /W4 /WX)
+else ()
 #   target_compile_options (mq_math PRIVATE -Wall -Wextra -Wpedantic -Werror)
-# endif ()
+endif ()
 
 # ------------------------------------------------------------------------------
 # If unit tests are needed, uncomment the following:
