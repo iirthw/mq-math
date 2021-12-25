@@ -18,7 +18,7 @@ namespace mq
     }
 
     template <typename T>
-    float discriminant_squared(T a, T b, T c)
+    float discriminantSquared(T a, T b, T c)
     {
         return b * b - 4 * a * c;
     }
