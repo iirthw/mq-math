@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "Vec.h"
+#include "vec.h"
 
 namespace mq
 {
