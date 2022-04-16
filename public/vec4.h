@@ -226,7 +226,7 @@ namespace mq {
 
     template <typename T>
     vec4_t<T> cross(const vec4_t<T>& a, const vec4_t<T>& b) {
-
+        // FIXME: provide impl
     }
 
 } // namespace mq
